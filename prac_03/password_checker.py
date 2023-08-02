@@ -54,11 +54,9 @@ def is_valid_password(password):
     if SPECIAL_CHARS_REQUIRED:
         if char in SPECIAL_CHARACTERS:
             count_special = 1
-        else:
+
+        if count_special == 0:
             return False
 
     return True
-
-
 main()
-
