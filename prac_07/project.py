@@ -1,8 +1,10 @@
 """
 The class
-Estimated Time: 1 hour
+Estimated Time: 45mins
 Actual Time:
 """
+
+COMPLETED_PERCENTAGE = 100
 
 
 class Project:
@@ -19,4 +21,6 @@ class Project:
         """Convert object into string and print."""
         return f"{self.name}, start: {self.start_date}, priority {self.priority}, estimate: ${self.cost_estimate}, completion: {self.completion_percentage}%"
 
-
+    def is_completed(self):
+        """Determine if the project is completed."""
+        return self.completion_percentage == COMPLETED_PERCENTAGE
