@@ -12,7 +12,7 @@ class SilverServiceTaxi(Taxi):
 
     def __str__(self):
         """Return string with Taxi information and total price."""
-        return f"{super().__str__()} plus flagfall of ${self.flag_value}, total fare price = ${self.get_fare()}"
+        return f"{super().__str__()} plus flagfall of ${self.flag_value}"
 
     def get_fare(self):
         """Return the price for the taxi trip."""
