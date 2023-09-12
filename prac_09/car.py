@@ -14,7 +14,7 @@ class Car:
 
     def __str__(self):
         """Convert object into string and print."""
-        return f"{self.name}, fuel={self.fuel}, odo={self.odometer}"
+        return f"{self.name}, fuel={self.fuel}, odometer={self.odometer}"
 
     def add_fuel(self, amount):
         """Add amount to the car's fuel."""
