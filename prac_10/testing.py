@@ -68,3 +68,18 @@ doctest.testmod()
 # and one more you decide (one that is valid!)
 # test this and watch the tests fail
 # then write the body of the function so that the tests pass
+
+
+def format_sentence(phrase):
+    """
+    Format a phrase to a sentence with capitalization and full stop.
+    >>> format_sentence('hello')
+    'Hello.'
+    >>> format_sentence('It is an ex parrot.')
+    'It is an ex parrot.'
+    >>> format_sentence('hello world')
+    'Hello world.'
+    """
+    if phrase[-1] != '.':
+        phrase += '.'
+    return phrase.capitalize()
